@@ -1,6 +1,6 @@
-package rendering
+package section10
 
-import rendering.Element.elem
+import section10.Element.elem
 
 /**
   * Created by Shota on 2016/07/18.
