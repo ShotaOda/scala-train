@@ -1,4 +1,4 @@
-package valdef
+package `override`
 
 abstract class Abs{
   def func: String
@@ -23,7 +23,7 @@ class Sub2 extends  Abs{
   // パラメーターなしメソッドのvalオーバライド
   val func = "this is implementation of func by val"
 
-  val field: String = _
+  val field: String = "ss"
 }
 
 // classパラーメーターでオーバライド
