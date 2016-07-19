@@ -18,17 +18,17 @@ class Sub extends Base{
 
 }
 
-class Sub2 extends  Abs{
+class Sub2 extends Abs{
 
   // パラメーターなしメソッドのvalオーバライド
   val func = "this is implementation of func by val"
 
-  val field: String = _
+  val field: String = "this is implementation of abs val"
 }
 
 // classパラーメーターでオーバライド
 class SubParam(val field: String) extends Abs{
-  def func: String = ???
+  def func: String = ""
 }
 
 // classパラーメーターでオーバライド

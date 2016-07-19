@@ -49,21 +49,20 @@ object Element {
 
 abstract class Element {
   // オーバーロードメソッドなので、importは一つ
-  import rendering.Element.elem
+  import section10.Element.elem
 
   def contents: List[String]
 
   val height: Int = contents.length
   val width: Int =
     // case classで実装する場合、初期化時に、contentsがNil
-    if (height == 0) 0
+    if (height == 0 || contents.head == null) 0
     else contents.head.length
-
 
   /* *************************************************************
   * ++ vs ::: 違い？
-  * ++  -> Seq  で定義
-  * ::: -> List で定義
+  * ++  -> Seq  で定義されているメソッド
+  * ::: -> List で定義されているメソッド
   * **************************************************************/
 
   def above(that: Element): Element = {

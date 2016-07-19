@@ -26,3 +26,7 @@ case class impl(arg: String, override val val1: String) extends abs {
   }
 }
 
+
+object run extends App{
+  impl("","")
+}
