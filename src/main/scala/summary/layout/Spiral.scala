@@ -1,11 +1,10 @@
-package section10
-
-import section10.Element.elem
+package summary.layout
 
 /**
   * Created by Shota on 2016/07/18.
   */
 object Spiral {
+  import Element.elem
   val space = elem(" ")
   val corner = elem("+")
 

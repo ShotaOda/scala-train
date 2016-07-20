@@ -15,6 +15,15 @@ class Outer {
   //if (java) inner.func // => calllllll
   val inner = new Inner()
 
+  private[this] def objPrivate = "call private[this]"
+  private def normalPrivate = "call normal private"
 
+  val outer = new Outer
+  /* *************************************************************
+  * private[this]
+  * 最も厳格な、アクセス修飾子
+  * 同一インスタンスからのみアクセス可能
+  * **************************************************************/
+  //outer.objPrivate  // inaccessible
+  outer.normalPrivate // accessible
 }
-
