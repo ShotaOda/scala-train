@@ -33,7 +33,7 @@ object Runner extends App{
 
   hog.fuga = "c"
   println(hog.fuga)
-  
+
   hog.fuga = "d"
   println(hog.fuga)
 }
