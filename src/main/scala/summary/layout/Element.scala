@@ -1,4 +1,4 @@
-package section10
+package summary.layout
 
 /**
   * Created by Shota on 2016/07/17.
@@ -49,7 +49,7 @@ object Element {
 
 abstract class Element {
   // オーバーロードメソッドなので、importは一つ
-  import section10.Element.elem
+  import Element.elem
 
   def contents: List[String]
 
